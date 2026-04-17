@@ -16,6 +16,16 @@ const { data: product } = await useFetch(uri, { key: id });
 definePageMeta({
   layout: "products",
 });
+
+// 導入錯誤頁面
+// 若在瀏覽器上執行而非伺服器(ex:link to)，則會報錯並不會跳轉到錯誤頁面(fatal處理)
+if (!product.id) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: "Product can't found",
+    fatal: true,
+  });
+}
 </script>
 
 <style scoped></style>
