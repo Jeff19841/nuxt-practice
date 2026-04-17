@@ -18,6 +18,12 @@
         <p class="mb-7">
           {{ product.description }}
         </p>
+        <button
+          class="btn flex w-24 items-center justify-center rounded bg-green-500 py-1"
+        >
+          <i class="material-icons mr-2">add_shopping_cart</i>
+          <p>下單</p>
+        </button>
       </div>
     </div>
   </div>
