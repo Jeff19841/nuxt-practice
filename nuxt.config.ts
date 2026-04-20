@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: "My application", // 瀏覽器預設標題
+      title: "Nuxt Jeff", // 瀏覽器預設標題
       meta: [{ name: "description", content: "work about Nuxt 3" }],
       link: [
         {

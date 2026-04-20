@@ -13,7 +13,7 @@
       <!-- 商品描述 -->
       <div class="flex flex-col justify-center p-7 xl:col-span-2">
         <h2 class="my-7 text-4xl">{{ product.title }}</h2>
-        <p class="my-7 text-xl">價格 - ${{ product.price }}</p>
+        <p class="my-7 text-xl">價格 : ${{ product.price }}</p>
         <p class="mb-4 border-b-2 pb-2 font-bold">商品描述:</p>
         <p class="mb-7">
           {{ product.description }}

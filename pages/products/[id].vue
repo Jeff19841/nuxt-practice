@@ -2,6 +2,11 @@
 
 <template>
   <div class="">
+    <Head>
+      <Title>Nuxt Jeff | {{ product.title }}</Title>
+      <Meta name="description" :content="product.description"></Meta>
+    </Head>
+
     <ProductDetails :product="product" />
   </div>
 </template>
@@ -13,10 +18,6 @@ const uri = "https://fakestoreapi.com/products/" + id;
 // 添加key可以更加明確區分不同id，避免有資料沒有刷新的問題
 const { data: product } = await useFetch(uri, { key: id });
 
-definePageMeta({
-  layout: "products",
-});
-
 // 導入錯誤頁面
 // 若在瀏覽器上執行而非伺服器(ex:link to)，則會報錯並不會跳轉到錯誤頁面(fatal處理)
 if (!product.value.id) {
@@ -26,6 +27,10 @@ if (!product.value.id) {
     fatal: true,
   });
 }
+
+definePageMeta({
+  layout: "products",
+});
 </script>
 
 <style scoped></style>
