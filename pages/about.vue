@@ -6,7 +6,10 @@
       vel saepe esse vero quia quasi enim, amet et cumque ipsam praesentium
       modi! Rerum nesciunt enim quis assumenda dolore nulla?
     </p>
+    <div class="">{{ data }}</div>
   </div>
 </template>
-<script setup></script>
+<script setup>
+const { data } = await useFetch("/api/currency/GBP");
+</script>
 <style scoped></style>

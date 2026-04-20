@@ -18,4 +18,7 @@ export default defineNuxtConfig({
       // titleTemplate: "%s/youtube.com/@TheJeff", // 瀏覽器標題模板(%s會包住title)
     },
   },
+  runtimeConfig: {
+    currencyKey: process.env.CURRENCY_API_KEY,
+  },
 });
