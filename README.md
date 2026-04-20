@@ -2,6 +2,8 @@
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
+記得新增環境變數，url需要金鑰才能使用
+
 ## Setup
 
 Make sure to install dependencies:
